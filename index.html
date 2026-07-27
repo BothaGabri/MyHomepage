@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Software | Custom Development & Infrastructure</title>
+  <style>
+    :root {
+      --bg-color: #050507;
+      --card-bg: #0e1526;
+      --text-white: #ffffff;
+      --text-muted: #d1d5db;
+      --accent-cyan: #00e5ff;
+      --accent-magenta: #ff007f;
+      --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: "Fira Code", "Consolas", "Courier New", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    /* Main Brand Header */
+    header h1 {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      color: var(--text-white);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Featured Banner Card */
+    .hero-card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-card h2 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text-white);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-card .subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Content Sections */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    .title-cyan {
+      color: var(--accent-cyan);
+    }
+
+    .title-magenta {
+      color: var(--accent-magenta);
+    }
+
+    .section-content p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      white-space: pre-line;
+    }
+
+    /* Links & Contact */
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #1a202c;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .hero-card {
+        padding: 1.5rem;
+      }
+      .hero-card h2 {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Header -->
+    <header>
+      <h1>ANGEL SOFTWARE</h1>
+    </header>
+
+    <!-- Sub-hero Card -->
+    <div class="hero-card">
+      <h2>END-TO-END SOFTWARE & INFRASTRUCTURE CONSULTANCY</h2>
+      <div class="subtitle">FOUNDED BY GABRI BOTHA • 2024 – PRESENT</div>
+    </div>
+
+    <!-- Company Profile Section -->
+    <section>
+      <h3 class="section-title title-cyan">COMPANY PROFILE</h3>
+      <div class="section-content">
+        <p>Software Engineering & Technical Consultancy: Founder-led consultancy delivering robust software architecture, infrastructure management, and technical guidance for local and international B2B clients.</p>
+        <p>Strategic Partnership: Providing end-to-end implementation, long-term technical support, and operational alignment across software products and IT pipelines.</p>
+      </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section>
+      <h3 class="section-title title-magenta">CORE SERVICES</h3>
+      <div class="section-content">
+        <p>Backend & API Development: Engineering high-performance, safe, and scalable backend services using Go and Python, including API integrations and webhook-driven automation.</p>
+        <p>Web & Mobile Development: Building responsive web platforms and cross-platform mobile apps using modern, lightweight frameworks and Flutter.</p>
+      </div>
+    </section>
+
+    <!-- Technical Focus Section -->
+    <section>
+      <h3 class="section-title title-cyan">TECHNICAL FOCUS</h3>
+      <div class="section-content">
+        <p>Database & Operations: Designing schemas, optimizing queries, maintaining PostgreSQL/MySQL/MariaDB systems, and automating backup/recovery routines.</p>
+        <p>Cloud, DevOps & Infrastructure: Deploying and scaling workloads with Docker, VMs, Kubernetes, GCP, Azure, and administering Linux environments.</p>
+      </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section>
+      <h3 class="section-title title-magenta">GET IN TOUCH</h3>
+      <div class="section-content">
+        <p>Inquiries & Partnerships: <a href="mailto:contact@angelsoftware.io">contact@angelsoftware.io</a></p>
+        <p>GitHub: <a href="https://github me" target="_blank">github.com/angelsoftware</a></p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 Angel Software. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
