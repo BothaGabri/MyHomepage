@@ -1,6 +1,19 @@
+import adapter from '@sveltejs/adapter-static';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {}
+	compilerOptions: {
+		runes: ({ filename }) =>
+			filename.split(/[/\\]/).includes('node_modules') ? undefined : true
+	},
+	kit: {
+		appDir: 'assets',
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: '404.html'
+		})
+	}
 };
 
 export default config;
