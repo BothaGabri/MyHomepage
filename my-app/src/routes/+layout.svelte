@@ -19,7 +19,7 @@
 </nav>
 <!-- Header -->
 <header>
-	<img src="/images/logo.png" alt="Angel Software Logo" />
+	<img src="/images/API logo.png" alt="Angel Software Logo" />
 </header>
 
 {@render children()}
